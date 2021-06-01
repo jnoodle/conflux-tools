@@ -45,7 +45,8 @@ function App() {
           await contract.balanceOf(formDataObj.userAddress)
         )
           .dividedBy(new BigNumber(10).pow(decimals))
-          .toFixed(6);
+          .toNumber()
+          .toLocaleString("en-US", { maximumFractionDigits: 6 });
 
         setBalanceInfo({
           name,
