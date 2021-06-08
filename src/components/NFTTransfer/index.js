@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Alert, Button, Card, Form, Spinner } from "react-bootstrap";
 import { default as xrc1155 } from "../../utils/abi/xrc1155";
-import { Conflux, format } from "js-conflux-sdk";
 import { useConfluxPortal } from "@cfxjs/react-hooks";
 
 function NFTTransfer() {
-  const conflux = new Conflux({
-    url: "https://main.confluxrpc.com/v2",
-    networkId: 1029
-  });
   const { address, login } = useConfluxPortal();
   const [loading, setLoading] = useState(false);
-  const [balanceInfo, setBalanceInfo] = useState(null);
   const [tokenIds, setTokenIds] = useState([]);
   const [operationType, setOperationType] = useState(1); // 0-get balance 1-transfer
 
@@ -26,11 +20,7 @@ function NFTTransfer() {
     const formData = new FormData(e.target);
     const formDataObj = Object.fromEntries(formData.entries());
 
-    const contract = conflux.Contract({
-      abi: xrc1155,
-      address: formDataObj.tokenAddress
-    });
-    const contract2 = window.confluxJS.Contract({
+    const contract = window.confluxJS.Contract({
       abi: xrc1155,
       address: formDataObj.tokenAddress
     });
@@ -61,7 +51,7 @@ function NFTTransfer() {
       ) {
         setLoading(true);
         try {
-          const tx = await contract2
+          const tx = await contract
             .safeBatchTransferFrom(
               address,
               formDataObj.toAddress,
@@ -157,19 +147,6 @@ function NFTTransfer() {
             {loading ? <Spinner animation="border" size="sm" /> : "Transfer"}
           </Button>
         </Form>
-        {balanceInfo && (
-          <Alert variant="success" style={{ marginTop: 10 }}>
-            <strong>
-              {balanceInfo.name} ({balanceInfo.symbol})
-            </strong>{" "}
-            balance is:{" "}
-            <strong>
-              <code style={{ fontSize: "100%" }}>
-                {balanceInfo.balance} {balanceInfo.symbol}
-              </code>
-            </strong>
-          </Alert>
-        )}
       </Card.Body>
     </Card>
   );
