@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/conflux-tools/static/css/main.8f941f39.chunk.css",
-    "main.js": "/conflux-tools/static/js/main.a3077389.chunk.js",
-    "main.js.map": "/conflux-tools/static/js/main.a3077389.chunk.js.map",
+    "main.css": "/conflux-tools/static/css/main.0ddb428c.chunk.css",
+    "main.js": "/conflux-tools/static/js/main.b91968ca.chunk.js",
+    "main.js.map": "/conflux-tools/static/js/main.b91968ca.chunk.js.map",
     "runtime-main.js": "/conflux-tools/static/js/runtime-main.ff55230f.js",
     "runtime-main.js.map": "/conflux-tools/static/js/runtime-main.ff55230f.js.map",
     "static/css/2.31823428.chunk.css": "/conflux-tools/static/css/2.31823428.chunk.css",
-    "static/js/2.22e51eeb.chunk.js": "/conflux-tools/static/js/2.22e51eeb.chunk.js",
-    "static/js/2.22e51eeb.chunk.js.map": "/conflux-tools/static/js/2.22e51eeb.chunk.js.map",
+    "static/js/2.89abf125.chunk.js": "/conflux-tools/static/js/2.89abf125.chunk.js",
+    "static/js/2.89abf125.chunk.js.map": "/conflux-tools/static/js/2.89abf125.chunk.js.map",
     "index.html": "/conflux-tools/index.html",
     "static/css/2.31823428.chunk.css.map": "/conflux-tools/static/css/2.31823428.chunk.css.map",
-    "static/css/main.8f941f39.chunk.css.map": "/conflux-tools/static/css/main.8f941f39.chunk.css.map",
-    "static/js/2.22e51eeb.chunk.js.LICENSE.txt": "/conflux-tools/static/js/2.22e51eeb.chunk.js.LICENSE.txt"
+    "static/css/main.0ddb428c.chunk.css.map": "/conflux-tools/static/css/main.0ddb428c.chunk.css.map",
+    "static/js/2.89abf125.chunk.js.LICENSE.txt": "/conflux-tools/static/js/2.89abf125.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ff55230f.js",
     "static/css/2.31823428.chunk.css",
-    "static/js/2.22e51eeb.chunk.js",
-    "static/css/main.8f941f39.chunk.css",
-    "static/js/main.a3077389.chunk.js"
+    "static/js/2.89abf125.chunk.js",
+    "static/css/main.0ddb428c.chunk.css",
+    "static/js/main.b91968ca.chunk.js"
   ]
 }
