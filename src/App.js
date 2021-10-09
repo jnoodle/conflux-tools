@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Col, Container, Navbar, Row } from "react-bootstrap";
 import TokenBalance from "./components/TokenBalance";
 import NFTTransfer from "./components/NFTTransfer";
+import NFTMetadata from "./components/NFTMetadata";
 import { useConfluxPortal } from "@cfxjs/react-hooks";
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
         <Row>
           <Col md="6" sm="12">
             <TokenBalance />
+            <div style={{ marginTop: 20 }}>
+              <NFTMetadata />
+            </div>
           </Col>
           <Col md="6" sm="12">
             <NFTTransfer />
